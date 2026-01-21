@@ -1,1 +1,14 @@
-{}
+{
+    "users": {},
+    "vpn_tokens": [],
+    "channels": [],
+    "settings": {
+        "next_user_number": 1,
+        "prices": {
+            "1": 300,
+            "3": 855,
+            "6": 1530,
+            "12": 2520
+        }
+    }
+}
