@@ -347,3 +347,4 @@ if __name__ == '__main__':
     threading.Thread(target=expiration_checker, daemon=True).start()
     print("Бот запущен...")
     bot.infinity_polling()
+
