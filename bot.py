@@ -124,7 +124,7 @@ def start(message):
             bot.send_message(ref, "🎁 Поздравляем! Друг активировал бота, вам начислено 3 дня!")
         save_db(db)
     
-    bot.send_message(message.chat.id, f"🇪🇸 **Siesta VPN приветствует Вас!**\nВаш номер пользователя: **№{db['users'][uid]['number']}**.", 
+    bot.send_message(message.chat.id, f"🇪🇸 **Siesta VPN приветствует Вас!**.", 
                      parse_mode="Markdown", reply_markup=main_kb(uid))
 
 @bot.callback_query_handler(func=lambda c: c.data == "check_subs")
@@ -347,4 +347,5 @@ if __name__ == '__main__':
     threading.Thread(target=expiration_checker, daemon=True).start()
     print("Бот запущен...")
     bot.infinity_polling()
+
 
